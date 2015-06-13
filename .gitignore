@@ -1,0 +1,4 @@
+/cookbooks/
+/tmp/librarian/
+.vagrant
+aspyatkin.com.json
