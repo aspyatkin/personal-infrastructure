@@ -32,8 +32,31 @@ git "#{base_dir}/public" do
 end
 
 template "#{node[:nginx][:dir]}/sites-available/#{node[:app][:name]}.conf" do
-  source 'nginx.conf.erb'
-  mode '0644'
+    source 'nginx.conf.erb'
+    mode '0644'
 end
 
 nginx_site "#{node[:app][:name]}.conf"
+
+directory '/var/ssl' do
+    owner 'root'
+    group 'root'
+    mode '0700'
+    action :create
+end
+
+file "/var/ssl/#{node[:app][:domain]}.crt" do
+    owner 'root'
+    group 'root'
+    mode '0600'
+    action :create
+    content data_bag_item('ssl', node[:app][:domain])['crt']
+end
+
+file "/var/ssl/#{node[:app][:domain]}.key" do
+    owner 'root'
+    group 'root'
+    mode '0600'
+    action :create
+    content data_bag_item('ssl', node[:app][:domain])['key']
+end

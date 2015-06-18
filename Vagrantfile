@@ -50,6 +50,7 @@ Vagrant.configure(2) do |config|
     chef.roles_path = 'roles'
     chef.data_bags_path = 'data_bags'
     chef.provisioning_path = '/tmp/vagrant-chef'
+    chef.encrypted_data_bag_secret_key_path = File.join __dir__, 'data_bag_key'
 
     chef.run_list = node_opts.delete 'run_list'
     chef.json = node_opts

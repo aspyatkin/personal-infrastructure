@@ -16,7 +16,8 @@
   "app": {
     "name": "aspyatkin.com",
     "user": "vagrant",
-    "group": "vagrant"
+    "group": "vagrant",
+    "domain": "aspyatkin-dev.com"
   },
   "run_list": [
     "recipe[nginx::source]",
