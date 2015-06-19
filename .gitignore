@@ -1,6 +1,6 @@
 /cookbooks/
 /tmp/librarian/
 .vagrant
-aspyatkin.com.json
+nodes/aspyatkin.com.json
 opts.yml
 data_bag_key
