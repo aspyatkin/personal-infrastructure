@@ -1,9 +1,37 @@
 server {
-    listen 80 default;
+    listen [::]:80;
+    listen 80;
+
+    server_name <%= node.app.domain %> www.<%= node.app.domain %>;
+    return 301 https://<%= node.app.domain %>$request_uri;
+}
+
+server {
+    listen [::]:443 ssl spdy;
+    listen 443 ssl spdy;
+
+    server_name www.<%= node.app.domain %>;
+
+    ssl_certificate /var/ssl/<%= node.app.domain %>.crt;
+    ssl_certificate_key /var/ssl/<%= node.app.domain %>.key;
+
+    keepalive_timeout 300;
+    return 301 https://<%= node.app.domain %>$request_uri;
+}
+
+server {
+    listen [::]:443 ssl spdy deferred;
+    listen 443 ssl spdy deferred;
+
+    server_name <%= node.app.domain %>;
+
+    ssl_certificate /var/ssl/<%= node.app.domain %>.crt;
+    ssl_certificate_key /var/ssl/<%= node.app.domain %>.key;
 
     access_log /var/www/<%= node.app.name %>/logs/nginx_access.log;
     error_log /var/www/<%= node.app.name %>/logs/nginx_error.log;
 
-    keepalive_timeout 50;
+    keepalive_timeout 300;
+    charset utf-8;
     root /var/www/<%= node.app.name %>/public;
 }
