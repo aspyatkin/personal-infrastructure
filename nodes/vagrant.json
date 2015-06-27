@@ -13,7 +13,8 @@
       "checksum": "23cca1239990c818d8f6da118320c4979aadf5386deda691b1b7c2c96b9df3d5"
     },
     "server_tokens": "off",
-    "ssl_dhparam": "/etc/ssl/certs/dhparam.pem"
+    "ssl_dhparam": "/etc/ssl/certs/dhparam.pem",
+    "ssl_stapling": false
   },
   "git": {
     "version": "2.4.2",
@@ -21,7 +22,6 @@
     "checksum": "8edd564051fb776a41b4c475ed2d6105de82b674b8903a9efafe8a0633e4876e"
   },
   "app": {
-    "name": "aspyatkin.com",
     "user": "vagrant",
     "group": "vagrant",
     "domain": "aspyatkin-dev.com"

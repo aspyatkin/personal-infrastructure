@@ -31,13 +31,13 @@ server {
     ssl_certificate /var/ssl/<%= node.app.domain %>.crt;
     ssl_certificate_key /var/ssl/<%= node.app.domain %>.key;
 
-    access_log /var/www/<%= node.app.name %>/logs/nginx_access.log;
-    error_log /var/www/<%= node.app.name %>/logs/nginx_error.log;
+    access_log /var/www/<%= node.app.domain %>/logs/nginx_access.log;
+    error_log /var/www/<%= node.app.domain %>/logs/nginx_error.log;
 
     add_header Strict-Transport-Security "max-age=63072000";
     add_header X-Frame-Options "DENY";
 
     keepalive_timeout 300;
     charset utf-8;
-    root /var/www/<%= node.app.name %>/public;
+    root /var/www/<%= node.app.domain %>/public;
 }

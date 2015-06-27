@@ -13,3 +13,12 @@ ssl_certificate_key /var/ssl/<%= node.app.domain %>.key;
 <% if node.nginx.has_key? 'ssl_dhparam' %>
 ssl_dhparam <%= node.nginx.ssl_dhparam %>;
 <% end %>
+
+<% if node.nginx.has_key? 'ssl_stapling' and node.nginx.ssl_stapling %>
+ssl_stapling on;
+ssl_stapling_verify on;
+ssl_trusted_certificate /var/ssl/<%= node.app.domain %>-trusted.crt;
+
+resolver 208.67.222.222 208.67.220.220 valid=300s;
+resolver_timeout 5s;
+<% end %>

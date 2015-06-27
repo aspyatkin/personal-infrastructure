@@ -6,7 +6,7 @@ directory '/var/www' do
     action :create
 end
 
-base_dir = "/var/www/#{node[:app][:name]}"
+base_dir = "/var/www/#{node[:app][:domain]}"
 
 directory base_dir do
     owner node[:app][:user]
@@ -31,7 +31,7 @@ git "#{base_dir}/public" do
     action :sync
 end
 
-template "#{node[:nginx][:dir]}/sites-available/#{node[:app][:name]}.conf" do
+template "#{node[:nginx][:dir]}/sites-available/#{node[:app][:domain]}.conf" do
     source 'nginx.conf.erb'
     mode '0644'
     notifies :reload, 'service[nginx]', :delayed
@@ -43,7 +43,7 @@ template "#{node[:nginx][:dir]}/conf.d/ssl.conf" do
     notifies :reload, 'service[nginx]', :delayed
 end
 
-nginx_site "#{node[:app][:name]}.conf"
+nginx_site "#{node[:app][:domain]}.conf"
 
 directory '/var/ssl' do
     owner 'root'
@@ -66,4 +66,14 @@ file "/var/ssl/#{node[:app][:domain]}.key" do
     mode '0600'
     action :create
     content data_bag_item('ssl', node[:app][:domain])['key']
+end
+
+if node[:nginx].has_key? 'ssl_stapling' and node[:nginx][:ssl_stapling]
+    file "/var/ssl/#{node[:app][:domain]}-trusted.crt" do
+        owner 'root'
+        group 'root'
+        mode '0600'
+        action :create
+        content data_bag_item('ssl', node[:app][:domain])['trusted_certs']
+    end
 end
