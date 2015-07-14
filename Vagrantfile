@@ -1,6 +1,5 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-
 require 'yaml'
 require 'json'
 
@@ -40,6 +39,13 @@ Vagrant.configure(2) do |config|
   if vm_opts.has_key? 'ram'
     config.vm.provider :virtualbox do |v|
       v.memory = vm_opts['ram']
+    end
+  end
+
+  if vm_opts.has_key? 'synced_folder'
+    vm_opts['synced_folder'].each do |entry|
+      opts = Hash[entry['opts'].map { |(k,v)| [k.to_sym, v] }]
+      config.vm.synced_folder entry['host'], entry['guest'], **opts
     end
   end
 

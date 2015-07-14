@@ -25,7 +25,7 @@ end
 git "#{base_dir}/public" do
     repository node[:app][:repository]
     revision node[:app][:revision]
-    checkout_branch node[:app][:checkout_branch]
+    enable_checkout false
     user node[:app][:user]
     group node[:app][:group]
     action :sync
