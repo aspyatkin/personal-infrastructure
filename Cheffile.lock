@@ -21,6 +21,11 @@ SITE
       yum-epel (~> 0.3)
     ohai (2.0.1)
     packagecloud (0.0.18)
+    rbenv (1.7.1)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      git (>= 0.0.0)
+      ohai (>= 1.1)
     rsyslog (2.0.0)
     runit (1.6.0)
       packagecloud (>= 0.0.0)
@@ -33,5 +38,6 @@ SITE
 DEPENDENCIES
   git (~> 4.2.2)
   nginx (~> 2.7.6)
+  rbenv (~> 1.7.1)
   runit (~> 1.6.0)
 

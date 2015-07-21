@@ -77,3 +77,14 @@ if node[:nginx].has_key? 'ssl_stapling' and node[:nginx][:ssl_stapling]
         content data_bag_item('ssl', node[:app][:domain])['trusted_certs']
     end
 end
+
+ENV['CONFIGURE_OPTS'] = '--disable-install-rdoc'
+
+rbenv_ruby '2.2.2' do
+    ruby_version '2.2.2'
+    global true
+end
+
+rbenv_gem 'bundler' do
+    ruby_version '2.2.2'
+end
