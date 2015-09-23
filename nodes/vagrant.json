@@ -24,6 +24,14 @@
   "rbenv": {
     "group_users": ["vagrant"]
   },
+  "nodejs": {
+    "version": "4.0.0",
+    "binary": {
+      "checksum": {
+        "linux_x64": "df8ada31840e3dc48c7fe7291c7eba70b2ce5a6b6d959ac01157b04731c8a88f"
+      }
+    }
+  },
   "app": {
     "user": "vagrant",
     "group": "vagrant",
@@ -34,6 +42,7 @@
     "recipe[git::source]",
     "recipe[rbenv::default]",
     "recipe[rbenv::ruby_build]",
+    "recipe[nodejs::nodejs_from_binary]",
     "recipe[aspyatkin.com]"
   ]
 }
