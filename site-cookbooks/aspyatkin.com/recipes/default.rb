@@ -15,13 +15,6 @@ directory base_dir do
     action :create
 end
 
-# directory "#{base_dir}/logs" do
-#     owner node[:app][:user]
-#     group node[:app][:group]
-#     mode '0755'
-#     action :create
-# end
-
 git base_dir do
     repository node[:app][:repository]
     revision node[:app][:revision]
