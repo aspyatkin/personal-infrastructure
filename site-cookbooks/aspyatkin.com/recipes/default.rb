@@ -81,3 +81,20 @@ end
 rbenv_gem 'bundler' do
     ruby_version '2.2.2'
 end
+
+rbenv_execute 'Install bundle' do
+    command 'bundle'
+    ruby_version '2.2.2'
+    cwd base_dir
+    user node[:app][:user]
+    group node[:app][:group]
+end
+
+rbenv_execute 'Build website' do
+    command 'jekyll build'
+    ruby_version '2.2.2'
+    cwd base_dir
+    user node[:app][:user]
+    group node[:app][:user]
+    environment 'JEKYLL_ENV' => node[:app][:environment]
+end
