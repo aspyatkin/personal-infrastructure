@@ -10,11 +10,11 @@ ssl_session_timeout 24h;
 ssl_certificate /var/ssl/<%= node.app.domain %>.crt;
 ssl_certificate_key /var/ssl/<%= node.app.domain %>.key;
 
-<% if node.nginx.has_key? 'ssl_dhparam' %>
-ssl_dhparam <%= node.nginx.ssl_dhparam %>;
+<% if node['aspyatkin-nginx'].has_key? 'ssl_dhparam' %>
+ssl_dhparam <%= node['aspyatkin-nginx'].ssl_dhparam %>;
 <% end %>
 
-<% if node.nginx.has_key? 'ssl_stapling' and node.nginx.ssl_stapling %>
+<% if node.nginx.has_key? 'ssl_stapling' and node['aspyatkin-nginx'].ssl_stapling %>
 ssl_stapling on;
 ssl_stapling_verify on;
 ssl_trusted_certificate /var/ssl/<%= node.app.domain %>-trusted.crt;
