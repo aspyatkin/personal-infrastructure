@@ -2,5 +2,5 @@
 /tmp/librarian/
 .vagrant
 nodes/aspyatkin.com.json
-opts.yml
+opts.yaml
 data_bag_key
