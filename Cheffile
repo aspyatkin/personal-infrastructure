@@ -5,6 +5,6 @@ site 'https://supermarket.getchef.com/api/v1'
 
 cookbook 'runit', '~> 1.6.0'
 cookbook 'nginx', '~> 2.7.6'
-cookbook 'git', '~> 4.2.2'
+cookbook 'git', '~> 4.3.4'
 cookbook 'rbenv', '~> 1.7.1'
 cookbook 'nodejs', '~> 2.4.2'

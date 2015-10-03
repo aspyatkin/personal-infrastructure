@@ -1,9 +1,4 @@
 {
-  "git": {
-    "version": "2.6.0",
-    "url": "https://www.kernel.org/pub/software/scm/git/git-2.6.0.tar.gz",
-    "checksum": "3ffdd9072dc16d81f36988f6fa00c7cf3b7ad50decbbf8a3e75df54b8bc967a6"
-  },
   "rbenv": {
     "group_users": ["vagrant"]
   },
@@ -22,7 +17,7 @@
   },
   "run_list": [
     "recipe[aspyatkin-nginx]",
-    "recipe[git::source]",
+    "recipe[aspyatkin-git]",
     "recipe[rbenv::default]",
     "recipe[rbenv::ruby_build]",
     "recipe[nodejs::nodejs_from_binary]",
