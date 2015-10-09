@@ -61,7 +61,7 @@ file "/var/ssl/#{node[:app][:domain]}.key" do
     content data_bag_item('ssl', node[:app][:domain])['key']
 end
 
-if node[:nginx].has_key? 'ssl_stapling' and node[:nginx][:ssl_stapling]
+if node['local-nginx'].has_key? 'ssl_stapling' and node['local-nginx'][:ssl_stapling]
     file "/var/ssl/#{node[:app][:domain]}-trusted.crt" do
         owner 'root'
         group 'root'
