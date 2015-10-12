@@ -8,9 +8,6 @@
     "domain": "aspyatkin-dev.com"
   },
   "run_list": [
-    "recipe[local-nginx]",
-    "recipe[local-git]",
-    "recipe[local-nodejs]",
     "recipe[rbenv::default]",
     "recipe[rbenv::ruby_build]",
     "recipe[aspyatkin.com]"

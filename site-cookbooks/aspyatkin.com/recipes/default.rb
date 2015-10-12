@@ -1,3 +1,6 @@
+include_recipe 'local-git'
+include_recipe 'local-nginx'
+include_recipe 'local-nodejs'
 
 directory '/var/www' do
     owner node[:app][:user]
