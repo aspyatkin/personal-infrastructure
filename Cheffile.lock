@@ -56,10 +56,18 @@ GIT
     latest-git (1.0.0)
       git (= 4.3.4)
 
+GIT
+  remote: https://github.com/aspyatkin/latest-nodejs.git
+  ref: v1.0.0
+  sha: b7778a1aadde9927efdd0a715c8cd9736c039fa7
+  specs:
+    latest-nodejs (1.0.0)
+      nodejs (= 2.4.2)
+
 DEPENDENCIES
   latest-git (>= 0)
+  latest-nodejs (>= 0)
   nginx (~> 2.7.6)
-  nodejs (~> 2.4.2)
   rbenv (~> 1.7.1)
   runit (~> 1.6.0)
 
