@@ -47,6 +47,16 @@ SITE
     yum (3.7.1)
     yum-epel (0.6.3)
       yum (~> 3.2)
+    zsh (1.0.3)
+
+GIT
+  remote: https://github.com/aspyatkin/dotfiles-cookbook.git
+  ref: master
+  sha: f2e62c41b609d1e25eeb5eae9169c14923ffb763
+  specs:
+    dotfiles-cookbook (1.0.0)
+      latest-git (= 1.0.0)
+      zsh (= 1.0.3)
 
 GIT
   remote: https://github.com/aspyatkin/latest-git.git
@@ -65,6 +75,7 @@ GIT
       nodejs (= 2.4.2)
 
 DEPENDENCIES
+  dotfiles-cookbook (>= 0)
   latest-git (>= 0)
   latest-nodejs (>= 0)
   nginx (~> 2.7.6)

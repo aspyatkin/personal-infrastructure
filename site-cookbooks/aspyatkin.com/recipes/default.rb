@@ -2,6 +2,7 @@ include_recipe 'latest-git'
 include_recipe 'latest-nodejs'
 include_recipe 'local-nginx'
 include_recipe 'local-rbenv'
+include_recipe 'dotfiles'
 
 directory '/var/www' do
     owner node[:app][:user]
