@@ -175,6 +175,34 @@ def get_node_opts
 end
 
 
+def provision_with_chef(config)
+  require 'chef'
+  node_opts = get_node_opts
+
+  if config.respond_to? :berkshelf
+    config.berkshelf.enabled = false
+  end
+
+  if config.respond_to? :librarian_chef
+    config.librarian_chef.enabled = true
+    config.librarian_chef.cheffile_dir = '.'
+  end
+
+  config.vm.provision :chef_solo do |chef|
+    Chef::Config.from_file File.join __dir__, '.chef', 'knife.rb'
+    chef.cookbooks_path = Chef::Config[:cookbook_path]
+    chef.roles_path = Chef::Config[:role_path]
+    chef.data_bags_path = Chef::Config[:data_bag_path]
+    chef.environments_path = Chef::Config[:environment_path]
+    chef.provisioning_path = '/tmp/vagrant-chef'
+    chef.encrypted_data_bag_secret_key_path = Chef::Config[:encrypted_data_bag_secret]
+    chef.environment = node_opts.delete('environment') || 'development'
+    chef.run_list = node_opts.delete 'run_list'
+    chef.json = node_opts
+  end
+end
+
+
 Vagrant.configure(2) do |config|
   vm_opts = get_vm_opts
 
@@ -189,17 +217,5 @@ Vagrant.configure(2) do |config|
   set_vm_synced_folders config, vm_opts
   set_vm_extra_storage config, vm_opts
 
-  node_opts = get_node_opts
-
-  config.librarian_chef.cheffile_dir = '.'
-  config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = ['site-cookbooks', 'cookbooks']
-    chef.roles_path = 'roles'
-    chef.data_bags_path = 'data_bags'
-    chef.provisioning_path = '/tmp/vagrant-chef'
-    chef.encrypted_data_bag_secret_key_path = File.join __dir__, 'data_bag_key'
-
-    chef.run_list = node_opts.delete 'run_list'
-    chef.json = node_opts
-  end
+  provision_with_chef config
 end

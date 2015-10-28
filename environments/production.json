@@ -1,0 +1,33 @@
+{
+  "name": "production",
+  "description": "Production environment",
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "override_attributes": {
+    "local-nginx": {
+      "ssl_dhparam": "/etc/ssl/certs/dhparam.pem",
+      "ssl_stapling": true
+    },
+    "local-rbenv": {
+      "group_users": ["aspyatkin"]
+    },
+    "dotfiles": {
+      "accounts": [
+        {
+          "user": "root",
+          "group": "root"
+        },
+        {
+          "user": "aspyatkin",
+          "group": "aspyatkin"
+        }    
+      ]
+    },
+    "app": {
+      "user": "aspyatkin",
+      "group": "aspyatkin",
+      "domain": "aspyatkin.com",
+      "environment": "production"
+    }
+  }
+}

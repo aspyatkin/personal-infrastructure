@@ -1,0 +1,9 @@
+{
+  "environment": "production",
+  "run_list": [
+    "recipe[aspyatkin.com]"
+  ],
+  "automatic": {
+    "ipaddress": "aspyatkin.com"
+  }
+}
