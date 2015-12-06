@@ -10,7 +10,7 @@
     "app": {
       "user": "vagrant",
       "group": "vagrant",
-      "domain": "aspyatkin-dev.com"
+      "domain": "aspyatkin.dev"
     }
   }
 }

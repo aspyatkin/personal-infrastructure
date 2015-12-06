@@ -3,7 +3,14 @@ server {
     listen 80;
 
     server_name <%= node.app.domain %> www.<%= node.app.domain %>;
-    return 301 https://<%= node.app.domain %>$request_uri;
+
+    location /.well-known/acme-challenge {
+        default_type text/plain;
+        root /var/www/letsencrypt;
+    }
+    location / {
+        return 301 https://<%= node.app.domain %>$request_uri;
+    }
 }
 
 server {
