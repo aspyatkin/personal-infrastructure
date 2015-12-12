@@ -17,7 +17,7 @@ SITE
       dmg (>= 0.0.0)
       windows (>= 0.0.0)
       yum-epel (>= 0.0.0)
-    homebrew (1.13.0)
+    homebrew (2.0.3)
       build-essential (>= 2.1.2)
     nginx (2.7.6)
       apt (~> 2.2)
@@ -26,7 +26,7 @@ SITE
       ohai (~> 2.0)
       runit (~> 1.2)
       yum-epel (~> 0.3)
-    nodejs (2.4.2)
+    nodejs (2.4.4)
       apt (>= 0.0.0)
       ark (>= 0.0.0)
       build-essential (>= 0.0.0)
@@ -42,6 +42,7 @@ SITE
     rsyslog (2.0.0)
     runit (1.6.0)
       packagecloud (>= 0.0.0)
+    vim (2.0.0)
     windows (1.38.2)
       chef_handler (>= 0.0.0)
     yum (3.7.1)
@@ -51,28 +52,28 @@ SITE
 
 GIT
   remote: https://github.com/aspyatkin/dotfiles-cookbook.git
-  ref: master
-  sha: f2e62c41b609d1e25eeb5eae9169c14923ffb763
+  ref: v1.1.0
+  sha: 5ce869161d570344feaffb61c5a4ab9cfe1cd1ed
   specs:
-    dotfiles-cookbook (1.0.0)
-      latest-git (= 1.0.0)
-      zsh (= 1.0.3)
+    dotfiles-cookbook (1.1.0)
+      vim (~> 2.0.0)
+      zsh (~> 1.0.3)
 
 GIT
   remote: https://github.com/aspyatkin/latest-git.git
-  ref: v1.0.0
-  sha: 188b281d08ec522ab533884e100b543d4cc3e218
+  ref: v1.1.1
+  sha: 66fa0ded50bc53adf027abba81c7a876fdc5ee72
   specs:
-    latest-git (1.0.0)
-      git (= 4.3.4)
+    latest-git (1.1.1)
+      git (~> 4.3.4)
 
 GIT
   remote: https://github.com/aspyatkin/latest-nodejs.git
-  ref: v1.0.0
-  sha: b7778a1aadde9927efdd0a715c8cd9736c039fa7
+  ref: v1.1.1
+  sha: d3176c92db29aaadc77ff038252ea44df250440f
   specs:
-    latest-nodejs (1.0.0)
-      nodejs (= 2.4.2)
+    latest-nodejs (1.1.1)
+      nodejs (~> 2.4.2)
 
 DEPENDENCIES
   dotfiles-cookbook (>= 0)
