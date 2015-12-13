@@ -1,5 +1,4 @@
 /cookbooks/
-/tmp/librarian/
 .vagrant
 opts.yaml
 data_bag_key

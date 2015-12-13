@@ -1,0 +1,86 @@
+DEPENDENCIES
+  aspyatkin.com
+    path: site-cookbooks/aspyatkin.com
+  dotfiles
+    git: https://github.com/aspyatkin/dotfiles-cookbook
+    revision: e844d1426f5b4911d06edd2c8b583cafdf007634
+    tag: v1.1.0
+  latest-git
+    git: https://github.com/aspyatkin/latest-git
+    revision: 1b177958a7972dacb6df0e0bb95cf5211647cd6d
+    tag: v1.1.1
+  latest-nodejs
+    git: https://github.com/aspyatkin/latest-nodejs
+    revision: 986fb2e0b26afc0442a964c33dffb13560411771
+    tag: v1.1.1
+  local-nginx
+    path: site-cookbooks/local-nginx
+  local-rbenv
+    path: site-cookbooks/local-rbenv
+
+GRAPH
+  7-zip (1.0.2)
+    windows (>= 1.2.2)
+  apt (2.9.2)
+  ark (0.9.0)
+    7-zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  aspyatkin.com (1.0.0)
+    dotfiles (= 1.1.0)
+    latest-git (= 1.1.1)
+    latest-nodejs (= 1.1.1)
+    local-nginx (= 1.0.0)
+    local-rbenv (= 1.0.0)
+  bluepill (2.4.1)
+    rsyslog (~> 2.0)
+  build-essential (2.2.4)
+  chef_handler (1.2.0)
+  dmg (2.3.0)
+  dotfiles (1.1.0)
+    vim (~> 2.0.0)
+    zsh (~> 1.0.3)
+  git (4.3.4)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  homebrew (2.0.3)
+    build-essential (>= 2.1.2)
+  latest-git (1.1.1)
+    git (~> 4.3.4)
+  latest-nodejs (1.1.1)
+    nodejs (~> 2.4.2)
+  local-nginx (1.0.0)
+    nginx (= 2.7.6)
+  local-rbenv (1.0.0)
+    rbenv (= 1.7.1)
+  nginx (2.7.6)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 2.0)
+    ohai (~> 2.0)
+    runit (~> 1.2)
+    yum-epel (~> 0.3)
+  nodejs (2.4.4)
+    apt (>= 0.0.0)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  ohai (2.0.4)
+  packagecloud (0.1.1)
+  rbenv (1.7.1)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+    ohai (>= 1.1)
+  rsyslog (2.2.0)
+  runit (1.7.4)
+    packagecloud (>= 0.0.0)
+  vim (2.0.0)
+  windows (1.38.4)
+    chef_handler (>= 0.0.0)
+  yum (3.8.2)
+  yum-epel (0.6.5)
+    yum (~> 3.2)
+  zsh (1.0.3)
