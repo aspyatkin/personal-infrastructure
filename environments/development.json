@@ -11,6 +11,8 @@
       "user": "vagrant",
       "group": "vagrant",
       "domain": "aspyatkin.dev"
+    },
+    "volgactf.ru": {
     }
   }
 }

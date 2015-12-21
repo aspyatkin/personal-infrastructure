@@ -29,5 +29,12 @@
       "domain": "aspyatkin.com",
       "environment": "production"
     }
+  },
+  "default_attributes": {
+    "volgactf.ru": {
+      "user": "aspyatkin",
+      "group": "aspyatkin",
+      "fqdn": "volgactf.ru"
+    }
   }
 }

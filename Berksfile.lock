@@ -17,6 +17,8 @@ DEPENDENCIES
     path: site-cookbooks/local-nginx
   local-rbenv
     path: site-cookbooks/local-rbenv
+  volgactf.ru
+    path: site-cookbooks/volgactf.ru
 
 GRAPH
   7-zip (1.0.2)
@@ -78,6 +80,10 @@ GRAPH
   runit (1.7.4)
     packagecloud (>= 0.0.0)
   vim (2.0.0)
+  volgactf.ru (1.0.0)
+    latest-git (= 1.1.1)
+    latest-nodejs (= 1.1.1)
+    local-nginx (= 1.0.0)
   windows (1.38.4)
     chef_handler (>= 0.0.0)
   yum (3.8.2)

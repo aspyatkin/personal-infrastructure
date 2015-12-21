@@ -7,3 +7,4 @@ cookbook 'latest-nodejs', git: 'https://github.com/aspyatkin/latest-nodejs', tag
 cookbook 'aspyatkin.com', path: 'site-cookbooks/aspyatkin.com'
 cookbook 'local-nginx', path: 'site-cookbooks/local-nginx'
 cookbook 'local-rbenv', path: 'site-cookbooks/local-rbenv'
+cookbook 'volgactf.ru', path: 'site-cookbooks/volgactf.ru'

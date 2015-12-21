@@ -1,6 +1,7 @@
 {
   "environment": "development",
   "run_list": [
-    "recipe[aspyatkin.com]"
+    "recipe[aspyatkin.com]",
+    "recipe[volgactf.ru]"
   ]
 }
