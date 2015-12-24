@@ -1,6 +1,3 @@
-default['local-nginx']['ssl_stapling'] = nil
-default['local-nginx']['ssl_dhparam'] = nil
-
 override['nginx']['version'] = '1.9.5'
 override['nginx']['install_method'] = 'source'
 override['nginx']['default_site_enabled'] = false

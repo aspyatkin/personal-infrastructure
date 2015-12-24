@@ -4,13 +4,6 @@
   "json_class": "Chef::Environment",
   "chef_type": "environment",
   "override_attributes": {
-    "local-nginx": {
-      "ssl_dhparam": "/etc/ssl/certs/dhparam.pem",
-      "ssl_stapling": true
-    },
-    "local-rbenv": {
-      "group_users": ["aspyatkin"]
-    },
     "dotfiles": {
       "accounts": [
         {
@@ -23,18 +16,20 @@
         }    
       ]
     },
-    "app": {
-      "user": "aspyatkin",
-      "group": "aspyatkin",
-      "domain": "aspyatkin.com",
-      "environment": "production"
+    "rbenv": {
+      "group_users": ["aspyatkin"]
     }
   },
   "default_attributes": {
-    "volgactf.ru": {
+    "volgactf-ru": {
       "user": "aspyatkin",
       "group": "aspyatkin",
       "fqdn": "volgactf.ru"
+    },
+    "aspyatkin-com": {
+      "user": "aspyatkin",
+      "group": "aspyatkin",
+      "fqdn": "aspyatkin.com"
     }
   }
 }

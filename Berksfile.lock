@@ -1,6 +1,6 @@
 DEPENDENCIES
-  aspyatkin.com
-    path: site-cookbooks/aspyatkin.com
+  aspyatkin-com
+    path: site-cookbooks/aspyatkin-com
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
     revision: e844d1426f5b4911d06edd2c8b583cafdf007634
@@ -15,10 +15,8 @@ DEPENDENCIES
     tag: v1.1.1
   local-nginx
     path: site-cookbooks/local-nginx
-  local-rbenv
-    path: site-cookbooks/local-rbenv
-  volgactf.ru
-    path: site-cookbooks/volgactf.ru
+  volgactf-ru
+    path: site-cookbooks/volgactf-ru
 
 GRAPH
   7-zip (1.0.2)
@@ -27,12 +25,12 @@ GRAPH
   ark (0.9.0)
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aspyatkin.com (1.0.0)
+  aspyatkin-com (1.0.0)
     dotfiles (= 1.1.0)
     latest-git (= 1.1.1)
     latest-nodejs (= 1.1.1)
     local-nginx (= 1.0.0)
-    local-rbenv (= 1.0.0)
+    rbenv (= 1.7.1)
   bluepill (2.4.1)
     rsyslog (~> 2.0)
   build-essential (2.2.4)
@@ -54,8 +52,6 @@ GRAPH
     nodejs (~> 2.4.2)
   local-nginx (1.0.0)
     nginx (= 2.7.6)
-  local-rbenv (1.0.0)
-    rbenv (= 1.7.1)
   nginx (2.7.6)
     apt (~> 2.2)
     bluepill (~> 2.3)
@@ -80,7 +76,7 @@ GRAPH
   runit (1.7.4)
     packagecloud (>= 0.0.0)
   vim (2.0.0)
-  volgactf.ru (1.0.0)
+  volgactf-ru (1.0.0)
     latest-git (= 1.1.1)
     latest-nodejs (= 1.1.1)
     local-nginx (= 1.0.0)

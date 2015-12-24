@@ -1,8 +1,9 @@
 {
   "environment": "production",
   "run_list": [
-    "recipe[aspyatkin.com]",
-    "recipe[volgactf.ru]"
+    "recipe[dotfiles]",
+    "recipe[aspyatkin-com]",
+    "recipe[volgactf-ru]"
   ],
   "automatic": {
     "ipaddress": "aspyatkin.com"

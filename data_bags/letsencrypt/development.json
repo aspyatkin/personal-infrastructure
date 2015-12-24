@@ -1,9 +1,0 @@
-{
-  "id": "development",
-  "dv": {
-    "encrypted_data": "HasMdgmRZxj6YN9ngKidYY9HnPLW2U16ZJty2cjrcMxb8Sc3xQuY29q2NDJg\n49191kFaoBWCLMoFptu3L3qkDQ==\n",
-    "iv": "LztSwyIQK2q2r0x0bcZkCQ==\n",
-    "version": 1,
-    "cipher": "aes-256-cbc"
-  }
-}

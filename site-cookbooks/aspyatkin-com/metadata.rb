@@ -1,10 +1,10 @@
-name 'aspyatkin.com'
+name 'aspyatkin-com'
 description 'Installs and configures aspyatkin.com'
 version '1.0.0'
 
-recipe 'aspyatkin.com', 'Installs and configures aspyatkin.com'
+recipe 'aspyatkin-com', 'Installs and configures aspyatkin.com'
 depends 'latest-git', '1.1.1'
 depends 'latest-nodejs', '1.1.1'
 depends 'local-nginx', '1.0.0'
-depends 'local-rbenv', '1.0.0'
 depends 'dotfiles', '1.1.0'
+depends 'rbenv', '1.7.1'

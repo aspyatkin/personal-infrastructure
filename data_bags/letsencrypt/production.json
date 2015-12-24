@@ -1,9 +1,0 @@
-{
-  "id": "production",
-  "dv": {
-    "encrypted_data": "5asshbtndbujF1873anmbE9czYmPzJg699DUIHrVRnqUJhjEndhmgMX1mpCj\nApwnEVmpXEQt1UvAc66LDEIXLh0NPPeFMcxLM9kIoRIX3ePn3ixEnRXik/sX\nchXtSraUNdZpRckl8mshIXUqQu2DQYIkpBbfjDeZc1k5Pg+n7hWV7jsGqvPH\nEIbAww1rmrSG5Jm0AWXRSeFa7cfGZI5vJDFe5gT1kyrzc+vk3F6jPNWQXh3x\nZhHihZJc7bvXj/89xTvYyG2rDX8Dai/q8BAuusTss24Lx+Qh09Fm9yjZRu1Q\nGdK28HwQPwvGrm2sqoZYdIlepHLVKakrwUI7JNhm+ahxQTeBqMobBULgZ2jh\nLXw8kEdNjEIFYjAMQalSo5asWTTKNA0eMaQelPyWcWL9rg==\n",
-    "iv": "yEC6Nrg2m/2YvxAOmogVOQ==\n",
-    "version": 1,
-    "cipher": "aes-256-cbc"
-  }
-}
