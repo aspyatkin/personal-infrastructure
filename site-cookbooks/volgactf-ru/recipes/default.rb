@@ -135,7 +135,8 @@ template nginx_conf do
     hsts_max_age: node[id][:hsts_max_age],
     access_log: ::File.join(logs_dir, 'nginx_access.log'),
     error_log: ::File.join(logs_dir, 'nginx_error.log'),
-    doc_root: ::File.join(base_dir, 'dist')
+    doc_root: ::File.join(base_dir, 'dist'),
+    oscp_stapling: node.chef_environment.start_with?('production')
   )
   action :create
 end
