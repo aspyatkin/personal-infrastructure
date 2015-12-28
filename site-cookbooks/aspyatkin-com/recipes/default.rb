@@ -1,6 +1,6 @@
 include_recipe 'latest-git'
 include_recipe 'latest-nodejs'
-include_recipe 'local-nginx'
+include_recipe 'modern_nginx'
 include_recipe 'rbenv::default'
 include_recipe 'rbenv::ruby_build'
 

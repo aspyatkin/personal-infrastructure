@@ -13,8 +13,10 @@ DEPENDENCIES
     git: https://github.com/aspyatkin/latest-nodejs
     revision: 986fb2e0b26afc0442a964c33dffb13560411771
     tag: v1.1.1
-  local-nginx
-    path: site-cookbooks/local-nginx
+  modern_nginx
+    git: https://github.com/aspyatkin/modern_nginx
+    revision: 4e673eaf6b237a6b6d5bfe5f9bf8dc94c60f4645
+    tag: v1.0.0
   volgactf-ru
     path: site-cookbooks/volgactf-ru
 
@@ -26,11 +28,10 @@ GRAPH
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
   aspyatkin-com (1.0.0)
-    dotfiles (= 1.1.0)
-    latest-git (= 1.1.1)
-    latest-nodejs (= 1.1.1)
-    local-nginx (= 1.0.0)
-    rbenv (= 1.7.1)
+    latest-git (~> 1.1.1)
+    latest-nodejs (~> 1.1.1)
+    modern_nginx (~> 1.0.0)
+    rbenv (~> 1.7.1)
   bluepill (2.4.1)
     rsyslog (~> 2.0)
   build-essential (2.2.4)
@@ -50,7 +51,7 @@ GRAPH
     git (~> 4.3.4)
   latest-nodejs (1.1.1)
     nodejs (~> 2.4.2)
-  local-nginx (1.0.0)
+  modern_nginx (1.0.0)
     nginx (= 2.7.6)
   nginx (2.7.6)
     apt (~> 2.2)
@@ -73,13 +74,13 @@ GRAPH
     git (>= 0.0.0)
     ohai (>= 1.1)
   rsyslog (2.2.0)
-  runit (1.7.4)
+  runit (1.7.6)
     packagecloud (>= 0.0.0)
   vim (2.0.0)
   volgactf-ru (1.0.0)
-    latest-git (= 1.1.1)
-    latest-nodejs (= 1.1.1)
-    local-nginx (= 1.0.0)
+    latest-git (~> 1.1.1)
+    latest-nodejs (~> 1.1.1)
+    modern_nginx (~> 1.0.0)
   windows (1.38.4)
     chef_handler (>= 0.0.0)
   yum (3.8.2)
