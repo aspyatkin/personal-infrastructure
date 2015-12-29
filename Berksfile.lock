@@ -1,14 +1,16 @@
 DEPENDENCIES
   aspyatkin-com
-    path: site-cookbooks/aspyatkin-com
+    git: https://github.com/aspyatkin/aspyatkin-com-cookbook
+    revision: 1edcdfd3d46e6b3a0f1a747e1ef313adbdc8a32a
+    tag: v1.0.0
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
     revision: e844d1426f5b4911d06edd2c8b583cafdf007634
     tag: v1.1.0
   latest-git
     git: https://github.com/aspyatkin/latest-git
-    revision: 1b177958a7972dacb6df0e0bb95cf5211647cd6d
-    tag: v1.1.1
+    revision: 42d911a88b6ee6cbbb3bb140db0273e225fbe7f1
+    tag: v1.1.2
   latest-nodejs
     git: https://github.com/aspyatkin/latest-nodejs
     revision: 986fb2e0b26afc0442a964c33dffb13560411771
@@ -18,7 +20,9 @@ DEPENDENCIES
     revision: 4e673eaf6b237a6b6d5bfe5f9bf8dc94c60f4645
     tag: v1.0.0
   volgactf-ru
-    path: site-cookbooks/volgactf-ru
+    git: https://github.com/VolgaCTF/volgactf-ru-cookbook
+    revision: 4bddd631a36c2819f999b3b8afac541218769ca5
+    tag: v1.0.0
 
 GRAPH
   7-zip (1.0.2)
@@ -28,7 +32,7 @@ GRAPH
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
   aspyatkin-com (1.0.0)
-    latest-git (~> 1.1.1)
+    latest-git (~> 1.1.2)
     latest-nodejs (~> 1.1.1)
     modern_nginx (~> 1.0.0)
     rbenv (~> 1.7.1)
@@ -40,15 +44,16 @@ GRAPH
   dotfiles (1.1.0)
     vim (~> 2.0.0)
     zsh (~> 1.0.3)
-  git (4.3.4)
+  git (4.3.5)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
     yum-epel (>= 0.0.0)
   homebrew (2.0.3)
     build-essential (>= 2.1.2)
-  latest-git (1.1.1)
-    git (~> 4.3.4)
+  latest-git (1.1.2)
+    build-essential (~> 2.2.4)
+    git (~> 4.3.5)
   latest-nodejs (1.1.1)
     nodejs (~> 2.4.2)
   modern_nginx (1.0.0)
@@ -78,7 +83,7 @@ GRAPH
     packagecloud (>= 0.0.0)
   vim (2.0.0)
   volgactf-ru (1.0.0)
-    latest-git (~> 1.1.1)
+    latest-git (~> 1.1.2)
     latest-nodejs (~> 1.1.1)
     modern_nginx (~> 1.0.0)
   windows (1.38.4)
