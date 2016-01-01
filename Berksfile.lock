@@ -1,8 +1,8 @@
 DEPENDENCIES
   aspyatkin-com
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
-    revision: 1edcdfd3d46e6b3a0f1a747e1ef313adbdc8a32a
-    tag: v1.0.0
+    revision: d32591f6883000dc2778e168c396b869990b6372
+    tag: v1.1.0
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
     revision: e844d1426f5b4911d06edd2c8b583cafdf007634
@@ -17,12 +17,12 @@ DEPENDENCIES
     tag: v1.1.1
   modern_nginx
     git: https://github.com/aspyatkin/modern_nginx
-    revision: 4e673eaf6b237a6b6d5bfe5f9bf8dc94c60f4645
-    tag: v1.0.0
+    revision: 945bce3dbe829ddc8a269705af5e836d4a785ced
+    tag: v1.1.0
   volgactf-ru
     git: https://github.com/VolgaCTF/volgactf-ru-cookbook
-    revision: 4bddd631a36c2819f999b3b8afac541218769ca5
-    tag: v1.0.0
+    revision: 0893b4c6a13b81dc5a752f73e407fcbf14e2b7da
+    tag: v1.1.0
 
 GRAPH
   7-zip (1.0.2)
@@ -31,10 +31,10 @@ GRAPH
   ark (0.9.0)
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aspyatkin-com (1.0.0)
+  aspyatkin-com (1.1.0)
     latest-git (~> 1.1.2)
     latest-nodejs (~> 1.1.1)
-    modern_nginx (~> 1.0.0)
+    modern_nginx (~> 1.1.0)
     rbenv (~> 1.7.1)
   bluepill (2.4.1)
     rsyslog (~> 2.0)
@@ -56,7 +56,7 @@ GRAPH
     git (~> 4.3.5)
   latest-nodejs (1.1.1)
     nodejs (~> 2.4.2)
-  modern_nginx (1.0.0)
+  modern_nginx (1.1.0)
     nginx (= 2.7.6)
   nginx (2.7.6)
     apt (~> 2.2)
@@ -82,10 +82,10 @@ GRAPH
   runit (1.7.6)
     packagecloud (>= 0.0.0)
   vim (2.0.0)
-  volgactf-ru (1.0.0)
+  volgactf-ru (1.1.0)
     latest-git (~> 1.1.2)
     latest-nodejs (~> 1.1.1)
-    modern_nginx (~> 1.0.0)
+    modern_nginx (~> 1.1.0)
   windows (1.38.4)
     chef_handler (>= 0.0.0)
   yum (3.8.2)
