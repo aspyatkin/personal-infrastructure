@@ -2,5 +2,8 @@ source "https://rubygems.org"
 
 gem 'knife-solo'
 gem 'knife-solo_data_bag'
-gem 'chef'
 gem 'berkshelf'
+
+group :plugins do
+  gem 'chef'
+end
