@@ -13,16 +13,13 @@ DEPENDENCIES
     tag: v1.1.2
   latest-nodejs
     git: https://github.com/aspyatkin/latest-nodejs
-    revision: 986fb2e0b26afc0442a964c33dffb13560411771
-    tag: v1.1.1
+    revision: 08214c340bd486117b9d5cc12df984cc8e158c74
+    tag: v1.1.2
   modern_nginx
     git: https://github.com/aspyatkin/modern_nginx
     revision: 945bce3dbe829ddc8a269705af5e836d4a785ced
     tag: v1.1.0
-  volgactf-ru
-    git: https://github.com/VolgaCTF/volgactf-ru-cookbook
-    revision: 0893b4c6a13b81dc5a752f73e407fcbf14e2b7da
-    tag: v1.1.0
+  python (~> 1.4.6)
 
 GRAPH
   7-zip (1.0.2)
@@ -54,8 +51,8 @@ GRAPH
   latest-git (1.1.2)
     build-essential (~> 2.2.4)
     git (~> 4.3.5)
-  latest-nodejs (1.1.1)
-    nodejs (~> 2.4.2)
+  latest-nodejs (1.1.2)
+    nodejs (~> 2.4.4)
   modern_nginx (1.1.0)
     nginx (= 2.7.6)
   nginx (2.7.6)
@@ -73,6 +70,9 @@ GRAPH
     yum-epel (>= 0.0.0)
   ohai (2.0.4)
   packagecloud (0.1.1)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   rbenv (1.7.1)
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)
@@ -82,10 +82,6 @@ GRAPH
   runit (1.7.6)
     packagecloud (>= 0.0.0)
   vim (2.0.0)
-  volgactf-ru (1.1.0)
-    latest-git (~> 1.1.2)
-    latest-nodejs (~> 1.1.1)
-    modern_nginx (~> 1.1.0)
   windows (1.38.4)
     chef_handler (>= 0.0.0)
   yum (3.8.2)

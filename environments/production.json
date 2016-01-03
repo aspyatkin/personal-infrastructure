@@ -11,13 +11,13 @@
           "group": "root"
         },
         {
-          "user": "aspyatkin",
-          "group": "aspyatkin"
+          "user": "titan",
+          "group": "titan"
         }    
       ]
     },
     "rbenv": {
-      "group_users": ["aspyatkin"]
+      "group_users": ["titan"]
     }
   },
   "default_attributes": {
@@ -27,8 +27,8 @@
       "fqdn": "volgactf.ru"
     },
     "aspyatkin-com": {
-      "user": "aspyatkin",
-      "group": "aspyatkin",
+      "user": "titan",
+      "group": "titan",
       "fqdn": "aspyatkin.com"
     }
   }
