@@ -1,5 +1,5 @@
 vm:
-  box: ubuntu/trusty64  # required
+  box: aspyatkin/ubuntu-15.10-server-amd64  # required
   name: sample-vm  # required
   memory: 1024  # default 512 MB
   cpus: 2  # default 1 processor
