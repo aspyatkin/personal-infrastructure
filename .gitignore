@@ -1,4 +1,4 @@
 /cookbooks/
 .vagrant
+.env
 opts.yaml
-data_bag_key

@@ -165,43 +165,6 @@ def set_vm_extra_storage(config, opts)
 end
 
 
-def get_node_opts(node_name)
-  filename = File.join __dir__, 'nodes', "#{node_name}.json"
-  if File.exists? filename
-    JSON.load File.open filename
-  else
-    {}
-  end
-end
-
-
-def provision_with_chef(config, vm_opts, node_opts)
-  require 'chef'
-  Chef::Config.from_file File.join __dir__, '.chef', 'knife.rb'
-
-  if config.respond_to? :berkshelf
-    config.berkshelf.enabled = true
-  end
-
-  if config.respond_to? :librarian_chef
-    config.librarian_chef.enabled = false
-  end
-
-  config.vm.provision :chef_solo do |chef|
-    chef.version = vm_opts.fetch('chef', {}).fetch('version', 'latest')
-    chef.cookbooks_path = Chef::Config[:cookbook_path]
-    chef.roles_path = Chef::Config[:role_path]
-    chef.data_bags_path = Chef::Config[:data_bag_path]
-    chef.environments_path = Chef::Config[:environment_path]
-    chef.environment = node_opts.delete('environment') || 'development'
-    chef.encrypted_data_bag_secret_key_path = Chef::Config[:encrypted_data_bag_secret]
-    chef.provisioning_path = '/tmp/vagrant-chef'
-    chef.run_list = node_opts.delete 'run_list'
-    chef.json = node_opts
-  end
-end
-
-
 Vagrant.configure(2) do |config|
   vm_opts = get_vm_opts
 
@@ -215,8 +178,4 @@ Vagrant.configure(2) do |config|
   set_vm_private_networks config, vm_opts
   set_vm_synced_folders config, vm_opts
   set_vm_extra_storage config, vm_opts
-
-  if vm_opts.fetch('vm', {}).fetch('chef', {}).has_key? 'node'
-    provision_with_chef config, vm_opts, get_node_opts(vm_opts['vm']['chef']['node'])
-  end
 end
