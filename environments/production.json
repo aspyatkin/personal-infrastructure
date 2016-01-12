@@ -5,15 +5,9 @@
   "chef_type": "environment",
   "override_attributes": {
     "dotfiles": {
-      "accounts": [
-        {
-          "user": "root",
-          "group": "root"
-        },
-        {
-          "user": "titan",
-          "group": "titan"
-        }    
+      "users": [
+        "root",
+        "titan"
       ]
     },
     "rbenv": {
