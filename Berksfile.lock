@@ -1,8 +1,8 @@
 DEPENDENCIES
   aspyatkin-com
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
-    revision: de5082775310df7b3e9d2ace6aa35286deda8a54
-    tag: v1.3.1
+    revision: 197c933aa4e6fbfc6fab203a43023951c8b0e8a7
+    tag: v1.3.2
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
     revision: c65f0e12b5498bbbf88d67bf25ab24703a55fc34
@@ -16,9 +16,7 @@ DEPENDENCIES
     revision: 08214c340bd486117b9d5cc12df984cc8e158c74
     tag: v1.1.2
   modern_nginx
-    git: https://github.com/aspyatkin/modern_nginx
-    revision: 945bce3dbe829ddc8a269705af5e836d4a785ced
-    tag: v1.1.0
+    path: ../modern_nginx
   python (~> 1.4.6)
 
 GRAPH
@@ -28,10 +26,10 @@ GRAPH
   ark (0.9.0)
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aspyatkin-com (1.3.1)
+  aspyatkin-com (1.3.2)
     latest-git (~> 1.1.3)
     latest-nodejs (~> 1.1.1)
-    modern_nginx (~> 1.1.0)
+    modern_nginx (~> 1.2.0)
     rbenv (~> 1.7.1)
     ssh_known_hosts (~> 2.0.0)
     ssh_user (~> 0.1.1)
@@ -55,7 +53,7 @@ GRAPH
     git (~> 4.3.5)
   latest-nodejs (1.1.2)
     nodejs (~> 2.4.4)
-  modern_nginx (1.1.0)
+  modern_nginx (1.2.0)
     nginx (= 2.7.6)
   nginx (2.7.6)
     apt (~> 2.2)
