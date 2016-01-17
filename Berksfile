@@ -5,5 +5,4 @@ cookbook 'dotfiles', git: 'https://github.com/aspyatkin/dotfiles-cookbook', tag:
 cookbook 'latest-git', git: 'https://github.com/aspyatkin/latest-git', tag: 'v1.1.3'
 cookbook 'latest-nodejs', git: 'https://github.com/aspyatkin/latest-nodejs', tag: 'v1.1.2'
 cookbook 'modern_nginx', git: 'https://github.com/aspyatkin/modern_nginx', tag: 'v1.1.0'
-
-cookbook 'aspyatkin-com', git: 'https://github.com/aspyatkin/aspyatkin-com-cookbook', tag: 'v1.3.0'
+cookbook 'aspyatkin-com', git: 'https://github.com/aspyatkin/aspyatkin-com-cookbook', tag: 'v1.3.1'

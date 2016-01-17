@@ -1,8 +1,8 @@
 DEPENDENCIES
   aspyatkin-com
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
-    revision: e3c7aa8910efe8ce605422bf025cb2eeef8a09bc
-    tag: v1.3.0
+    revision: de5082775310df7b3e9d2ace6aa35286deda8a54
+    tag: v1.3.1
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
     revision: c65f0e12b5498bbbf88d67bf25ab24703a55fc34
@@ -28,8 +28,8 @@ GRAPH
   ark (0.9.0)
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aspyatkin-com (1.3.0)
-    latest-git (~> 1.1.2)
+  aspyatkin-com (1.3.1)
+    latest-git (~> 1.1.3)
     latest-nodejs (~> 1.1.1)
     modern_nginx (~> 1.1.0)
     rbenv (~> 1.7.1)
