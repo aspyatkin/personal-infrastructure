@@ -1,0 +1,15 @@
+vm:
+  box: aspyatkin/ubuntu-16.04-server-amd64
+  box_version: ~> 1.0.0
+  name: aspyatkin.dev
+  memory: 1024
+  cpus: 1
+  hostname: aspyatkin.dev
+  network:
+    private:
+      - ip: 172.16.0.10
+  synced_folders:
+    - host: .
+      guest: /vagrant
+      opts:
+        disabled: yes
