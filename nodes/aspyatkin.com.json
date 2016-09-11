@@ -1,11 +1,28 @@
 {
   "environment": "production",
   "run_list": [
-    "recipe[python]",
-    "recipe[latest-git]",
-    "recipe[dotfiles]",
-    "recipe[aspyatkin-com]"
+    "recipe[aspyatkin-com::python2]",
+    "recipe[latest-git::default]",
+    "recipe[dotfiles::default]",
+    "recipe[aspyatkin-com::default]"
   ],
+  "dotfiles": {
+    "users": [
+      "root",
+      "titan"
+    ]
+  },
+  "rbenv": {
+    "group_users": [
+      "root",
+      "titan"
+    ]
+  },
+  "aspyatkin-com": {
+    "user": "titan",
+    "group": "titan",
+    "fqdn": "aspyatkin.com"
+  },
   "automatic": {
     "ipaddress": "aspyatkin.com"
   }

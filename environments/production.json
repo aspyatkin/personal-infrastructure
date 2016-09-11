@@ -3,22 +3,10 @@
   "description": "Production environment",
   "json_class": "Chef::Environment",
   "chef_type": "environment",
-  "override_attributes": {
-    "dotfiles": {
-      "users": [
-        "root",
-        "titan"
-      ]
-    },
-    "rbenv": {
-      "group_users": ["titan"]
-    }
-  },
   "default_attributes": {
-    "aspyatkin-com": {
-      "user": "titan",
-      "group": "titan",
-      "fqdn": "aspyatkin.com"
+    "latest-nodejs": {
+      "install": "current",
+      "binary": true
     }
   }
 }

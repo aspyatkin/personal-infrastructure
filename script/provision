@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+if [ "$2" != "" ]; then
+  DETECTED_ENV="$2"
+else
+  DETECTED_ENV="development"
+fi
+case "$DETECTED_ENV" in
+  "development") DETECTED_TLD="dev";;
+  "production") DETECTED_TLD="com";;
+  *) echo "Unsupported environment $DETECTED_ENV"
+    exit 2
+    ;;
+esac
+CHEF_ENV="$DETECTED_ENV" bundle exec knife solo cook "$1.$DETECTED_TLD"

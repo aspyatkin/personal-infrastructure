@@ -2,3 +2,4 @@
 .vagrant
 .env
 opts.yaml
+.DS_Store
