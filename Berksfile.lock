@@ -1,6 +1,8 @@
 DEPENDENCIES
   aspyatkin-com
-    path: ../aspyatkin-com-cookbook
+    git: https://github.com/aspyatkin/aspyatkin-com-cookbook
+    revision: ac142ef80ff9a2c2b431c061a50f0b914c9e179c
+    tag: v1.4.0
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
     revision: 8bad99910ef4c0955e21730f37bdcaf16b58cb5f

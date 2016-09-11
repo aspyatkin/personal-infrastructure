@@ -13,6 +13,6 @@ cookbook 'modern_nginx',
 		 git: 'https://github.com/aspyatkin/modern_nginx',
 		 tag: 'v1.3.0'
 cookbook 'aspyatkin-com',
-		 path: '../aspyatkin-com-cookbook'
-		 # git: 'https://github.com/aspyatkin/aspyatkin-com-cookbook',
-		 # tag: 'v1.3.4'
+		 # path: '../aspyatkin-com-cookbook'
+		 git: 'https://github.com/aspyatkin/aspyatkin-com-cookbook',
+		 tag: 'v1.4.0'
