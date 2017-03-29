@@ -4,8 +4,16 @@
     "recipe[aspyatkin-com::python2]",
     "recipe[latest-git::default]",
     "recipe[dotfiles::default]",
+    "recipe[dhparam::default_key]",
+    "recipe[modern_nginx::default]",
     "recipe[aspyatkin-com::default]"
   ],
+  "automatic": {
+    "ipaddress": "aspyatkin.com"
+  },
+  "dhparam": {
+    "default_key_size": 2048
+  },
   "dotfiles": {
     "users": [
       "root",
@@ -20,10 +28,6 @@
   },
   "aspyatkin-com": {
     "user": "titan",
-    "group": "titan",
     "fqdn": "aspyatkin.com"
-  },
-  "automatic": {
-    "ipaddress": "aspyatkin.com"
   }
 }

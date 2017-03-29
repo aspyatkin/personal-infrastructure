@@ -11,4 +11,4 @@ case "$DETECTED_ENV" in
     exit 2
     ;;
 esac
-bundle exec knife solo prepare "$1.$DETECTED_TLD"
+CHEF_ENV="$DETECTED_ENV" bundle exec knife solo prepare "$1.$DETECTED_TLD"

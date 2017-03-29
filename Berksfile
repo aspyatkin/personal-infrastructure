@@ -1,18 +1,35 @@
 source 'https://api.berkshelf.com'
 
 cookbook 'dotfiles',
+		 # path: '../dotfiles-cookbook'
 		 git: 'https://github.com/aspyatkin/dotfiles-cookbook',
-		 tag: 'v1.2.1'
+		 tag: 'v1.3.0'
+
 cookbook 'latest-git',
+		 # path: '../latest-git-cookbook'
 		 git: 'https://github.com/aspyatkin/latest-git',
-		 tag: 'v1.1.11'
+		 tag: 'v1.2.0'
+
 cookbook 'latest-nodejs',
 		 git: 'https://github.com/aspyatkin/latest-nodejs',
 		 tag: 'v1.2.7'
+
 cookbook 'modern_nginx',
+		 # path: '../modern_nginx'
 		 git: 'https://github.com/aspyatkin/modern_nginx',
-		 tag: 'v1.3.0'
+		 tag: 'v2.2.0'
+
+cookbook 'dhparam', '~> 1.0.0'
+		 # path: '../dhparam-cookbook'
+		 # git: 'https://github.com/aspyatkin/dhparam-cookbook.git'
+		 # tag: 'v1.0.0'
+
+cookbook 'tls', '~> 3.0.0'
+		 # path: '../tls-cookbook'
+		 # git: 'https://github.com/aspyatkin/tls-cookbook.git'
+		 # tag: 'v3.0.0'
+
 cookbook 'aspyatkin-com',
 		 # path: '../aspyatkin-com-cookbook'
 		 git: 'https://github.com/aspyatkin/aspyatkin-com-cookbook',
-		 tag: 'v1.4.0'
+		 tag: 'v1.5.0'
