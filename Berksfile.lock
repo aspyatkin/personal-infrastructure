@@ -1,8 +1,8 @@
 DEPENDENCIES
   aspyatkin-com
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
-    revision: e769281f5d7930ca02563e007ede5a87342071b7
-    tag: v1.5.0
+    revision: 8f589048bbfa8fcc660e1521ab1c9beedc5a0872
+    tag: v1.5.1
   dhparam (~> 1.0.0)
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
@@ -23,12 +23,12 @@ DEPENDENCIES
   tls (~> 3.0.0)
 
 GRAPH
-  apt (6.1.0)
+  apt (6.1.2)
   ark (3.1.0)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aspyatkin-com (1.5.0)
+  aspyatkin-com (1.5.1)
     chef_nginx (~> 6.0.0)
     git (~> 6.0.0)
     latest-nodejs (~> 1.2.7)
