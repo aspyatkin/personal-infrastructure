@@ -1,5 +1,7 @@
 source 'https://api.berkshelf.com'
 
+cookbook 'poise-python', '1.6.0'
+
 cookbook 'dotfiles',
 		 # path: '../dotfiles-cookbook'
 		 git: 'https://github.com/aspyatkin/dotfiles-cookbook',
@@ -17,7 +19,7 @@ cookbook 'latest-nodejs',
 cookbook 'modern_nginx',
 		 # path: '../modern_nginx'
 		 git: 'https://github.com/aspyatkin/modern_nginx',
-		 tag: 'v2.2.0'
+		 tag: 'v2.4.0'
 
 cookbook 'dhparam', '~> 1.0.0'
 		 # path: '../dhparam-cookbook'
@@ -32,4 +34,4 @@ cookbook 'tls', '~> 3.0.0'
 cookbook 'aspyatkin-com',
 		 # path: '../aspyatkin-com-cookbook'
 		 git: 'https://github.com/aspyatkin/aspyatkin-com-cookbook',
-		 tag: 'v1.5.1'
+		 tag: 'v1.6.0'

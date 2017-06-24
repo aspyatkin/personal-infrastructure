@@ -1,7 +1,7 @@
 {
   "environment": "production",
   "run_list": [
-    "recipe[aspyatkin-com::python2]",
+    "recipe[poise-python::default]",
     "recipe[latest-git::default]",
     "recipe[dotfiles::default]",
     "recipe[dhparam::default_key]",

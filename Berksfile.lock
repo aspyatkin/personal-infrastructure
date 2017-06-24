@@ -1,8 +1,8 @@
 DEPENDENCIES
   aspyatkin-com
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
-    revision: 8f589048bbfa8fcc660e1521ab1c9beedc5a0872
-    tag: v1.5.1
+    revision: fcdfcc78f1dd952e3aad2428fcb4eb3ca0abbe24
+    tag: v1.6.0
   dhparam (~> 1.0.0)
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
@@ -18,8 +18,9 @@ DEPENDENCIES
     tag: v1.2.7
   modern_nginx
     git: https://github.com/aspyatkin/modern_nginx
-    revision: 0728f0b6792a02f3db9260ce83fc0e3ecafbef03
-    tag: v2.2.0
+    revision: 8682e293e8f0196fdf0d8aea8e41af48c3476b71
+    tag: v2.4.0
+  poise-python (= 1.6.0)
   tls (~> 3.0.0)
 
 GRAPH
@@ -28,19 +29,18 @@ GRAPH
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aspyatkin-com (1.5.1)
-    chef_nginx (~> 6.0.0)
+  aspyatkin-com (1.6.0)
+    chef_nginx (~> 6.1.1)
     git (~> 6.0.0)
     latest-nodejs (~> 1.2.7)
-    poise-python (= 1.5.1)
     rbenv (~> 1.7.1)
-    ssh-private-keys (~> 1.0.0)
-    ssh_known_hosts (~> 4.0.0)
+    ssh-private-keys (~> 2.0.0)
+    ssh_known_hosts (~> 5.2.1)
     tls (~> 3.0.0)
   build-essential (8.0.3)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef_nginx (6.0.3)
+  chef_nginx (6.1.1)
     build-essential (>= 0.0.0)
     compat_resource (>= 12.16.3)
     ohai (>= 4.1.0)
@@ -62,11 +62,13 @@ GRAPH
     git (~> 6.0.0)
   latest-nodejs (1.2.7)
     nodejs (~> 2.4.4)
+  logrotate (2.2.0)
   mingw (2.0.1)
     seven_zip (>= 0.0.0)
-  modern_nginx (2.2.0)
-    chef_nginx (~> 6.0.0)
+  modern_nginx (2.4.0)
+    chef_nginx (~> 6.1.1)
     dhparam (~> 1.0.0)
+    logrotate (~> 2.2.0)
   multipackage (3.0.30)
     compat_resource (>= 0.0.0)
   nodejs (2.4.4)
@@ -82,7 +84,7 @@ GRAPH
   poise-languages (2.1.1)
     poise (~> 2.5)
     poise-archive (~> 1.0)
-  poise-python (1.5.1)
+  poise-python (1.6.0)
     poise (~> 2.7)
     poise-languages (~> 2.0)
   rbenv (1.7.1)
@@ -92,8 +94,8 @@ GRAPH
     ohai (>= 1.1)
   seven_zip (2.0.2)
     windows (>= 1.2.2)
-  ssh-private-keys (1.0.0)
-  ssh_known_hosts (4.0.0)
+  ssh-private-keys (2.0.0)
+  ssh_known_hosts (5.2.1)
   tls (3.0.0)
   vim (2.0.2)
   windows (3.1.1)
