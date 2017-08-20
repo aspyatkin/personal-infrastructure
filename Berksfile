@@ -1,5 +1,7 @@
 source 'https://api.berkshelf.com'
 
+solver :gecode, :preferred
+
 cookbook 'poise-python', '1.6.0'
 
 cookbook 'dotfiles',
