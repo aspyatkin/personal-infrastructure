@@ -7,6 +7,9 @@
     "latest-nodejs": {
       "install": "current",
       "binary": true
+    },
+    "modern_nginx": {
+      "install": "mainline"
     }
   }
 }

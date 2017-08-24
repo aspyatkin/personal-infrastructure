@@ -9,25 +9,9 @@
     "recipe[aspyatkin-com::default]"
   ],
   "automatic": {
-    "ipaddress": "aspyatkin.com"
+    "fqdn": "aspyatkin.com"
   },
   "dhparam": {
     "default_key_size": 2048
-  },
-  "dotfiles": {
-    "users": [
-      "root",
-      "titan"
-    ]
-  },
-  "rbenv": {
-    "group_users": [
-      "root",
-      "titan"
-    ]
-  },
-  "aspyatkin-com": {
-    "user": "titan",
-    "fqdn": "aspyatkin.com"
   }
 }
