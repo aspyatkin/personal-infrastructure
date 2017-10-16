@@ -35,6 +35,6 @@ cookbook 'tls', '~> 3.0.0'
 		 # tag: 'v3.0.0'
 
 cookbook 'aspyatkin-com',
-		 # path: '../aspyatkin-com-cookbook'
+		 # path: '~/Projects/github.com/aspyatkin//aspyatkin-com-cookbook'
 		 git: 'https://github.com/aspyatkin/aspyatkin-com-cookbook',
-		 tag: 'v1.7.0'
+		 tag: 'v1.7.1'
