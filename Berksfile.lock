@@ -1,8 +1,8 @@
 DEPENDENCIES
   aspyatkin-com
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
-    revision: d591f79c2abee598f9bd579cefdfa9a93161b32f
-    tag: v1.8.0
+    revision: f9b9b1bc9997517054a91b04e463955459c52c84
+    tag: v1.9.0
   dhparam (~> 1.0.0)
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
@@ -18,10 +18,9 @@ DEPENDENCIES
     tag: v1.4.0
   modern_nginx
     git: https://github.com/aspyatkin/modern_nginx
-    revision: 7121b6634da25ecbbea1b41c58b544c1adc8f6ba
-    tag: v2.8.0
+    revision: bf5314821bfdfc7c68a1e410a6fde0d9a81ae687
+    tag: v2.9.0
   poise-python (= 1.6.0)
-  tls (~> 3.0.0)
 
 GRAPH
   apt (6.1.4)
@@ -29,24 +28,19 @@ GRAPH
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aspyatkin-com (1.8.0)
-    chef_nginx (~> 6.2.0)
+  aspyatkin-com (1.9.0)
     git (~> 8.0.0)
-    instance (~> 1.0.0)
+    instance (~> 2.0.0)
     latest-nodejs (~> 1.4.0)
+    nginx (~> 7.0.0)
     rbenv (~> 1.7.1)
+    secret (~> 1.0.0)
     ssh-private-keys (~> 2.0.0)
     ssh_known_hosts (~> 4.0.0)
     tls (~> 3.0.0)
   build-essential (8.0.3)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  chef_nginx (6.2.0)
-    build-essential (>= 0.0.0)
-    compat_resource (>= 12.16.3)
-    ohai (>= 4.1.0)
-    yum-epel (>= 0.0.0)
-    zypper (>= 0.0.0)
   compat_resource (12.19.0)
   dhparam (1.0.0)
   dotfiles (1.4.0)
@@ -56,7 +50,7 @@ GRAPH
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
   homebrew (4.2.0)
-  instance (1.0.0)
+  instance (2.0.0)
   latest-git (1.4.0)
     apt (>= 0.0.0)
     git (~> 8.0.0)
@@ -65,12 +59,18 @@ GRAPH
   logrotate (2.2.0)
   mingw (2.0.1)
     seven_zip (>= 0.0.0)
-  modern_nginx (2.8.0)
-    chef_nginx (~> 6.2.0)
+  modern_nginx (2.9.0)
     dhparam (~> 1.0.0)
     logrotate (~> 2.2.0)
+    nginx (~> 7.0.0)
   multipackage (3.0.30)
     compat_resource (>= 0.0.0)
+  nginx (7.0.0)
+    build-essential (>= 0.0.0)
+    compat_resource (>= 12.16.3)
+    ohai (>= 4.1.0)
+    yum-epel (>= 0.0.0)
+    zypper (>= 0.0.0)
   nodejs (4.0.0)
     ark (>= 2.0.2)
     build-essential (>= 0.0.0)
@@ -90,13 +90,15 @@ GRAPH
     build-essential (>= 0.0.0)
     git (>= 0.0.0)
     ohai (>= 1.1)
+  secret (1.0.0)
+    instance (~> 2.0.0)
   seven_zip (2.0.2)
     windows (>= 1.2.2)
   ssh-private-keys (2.0.0)
   ssh_known_hosts (4.0.0)
   tls (3.0.0)
   vim (2.0.2)
-  windows (3.2.0)
+  windows (3.3.0)
     ohai (>= 4.0.0)
   yum-epel (2.1.2)
     compat_resource (>= 12.16.3)
