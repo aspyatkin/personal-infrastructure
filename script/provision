@@ -5,10 +5,10 @@ else
   DETECTED_ENV="development"
 fi
 case "$DETECTED_ENV" in
-  "development") DETECTED_TLD="dev";;
-  "production") DETECTED_TLD="com";;
+  "development") DETECTED_BASE="srvr.dev";;
+  "production") DETECTED_BASE="srvr.one";;
   *) echo "Unsupported environment $DETECTED_ENV"
     exit 2
     ;;
 esac
-CHEF_ENV="$DETECTED_ENV" bundle exec knife solo cook "$1.$DETECTED_TLD"
+CHEF_ENV="$DETECTED_ENV" bundle exec knife solo cook "$1.$DETECTED_BASE"

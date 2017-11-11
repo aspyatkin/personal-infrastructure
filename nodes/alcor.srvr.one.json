@@ -8,8 +8,11 @@
     "recipe[modern_nginx::default]",
     "recipe[aspyatkin-com::default]"
   ],
-  "automatic": {
+  "aspyatkin-com": {
     "fqdn": "aspyatkin.com"
+  },
+  "automatic": {
+    "fqdn": "alcor.srvr.one"
   },
   "dhparam": {
     "default_key_size": 2048
