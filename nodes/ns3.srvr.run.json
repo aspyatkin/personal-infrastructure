@@ -1,0 +1,13 @@
+{
+  "run_list": [
+    "recipe[locale::default]",
+    "recipe[build-essential::default]",
+    "recipe[poise-python::default]",
+    "recipe[latest-git::default]",
+    "recipe[dotfiles::default]"
+  ],
+  "environment": "production",
+  "automatic": {
+    "ipaddress": "ns3.srvr.run"
+  }
+}

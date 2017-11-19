@@ -96,7 +96,7 @@ GEM
     iniparse (1.4.4)
     ipaddress (0.8.3)
     json (2.1.0)
-    knife-solo (0.7.0.pre)
+    knife-solo (0.7.0.pre2)
       chef (>= 10.20)
       erubis (~> 2.7.0)
       net-ssh (>= 2.7)
@@ -117,7 +117,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
-    net-ssh (4.1.0)
+    net-ssh (4.2.0)
     net-ssh-gateway (2.0.0)
       net-ssh (>= 4.0.0)
     net-ssh-multi (1.2.1)
@@ -218,15 +218,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt_pbkdf (~> 1.0.0)
+  bcrypt_pbkdf (>= 1.0, < 2.0)
   berkshelf (~> 6.3.0)
   chef (~> 12.21.4)
   dep_selector (~> 1.0, >= 1.0.6)
   dotenv (~> 2.2.1)
-  knife-solo (~> 0.7.0.pre)
+  knife-solo (~> 0.7.0.pre.2)
   knife-solo_data_bag (~> 2.1.0)
-  rbnacl (~> 4.0.2)
-  rbnacl-libsodium (~> 1.0.13)
+  rbnacl (>= 3.2, < 5.0)
+  rbnacl-libsodium
 
 BUNDLED WITH
-   1.14.6
+   1.15.4

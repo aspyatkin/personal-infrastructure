@@ -3,6 +3,7 @@ DEPENDENCIES
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
     revision: f9b9b1bc9997517054a91b04e463955459c52c84
     tag: v1.9.0
+  build-essential
   dhparam (~> 1.0.0)
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
@@ -16,6 +17,7 @@ DEPENDENCIES
     git: https://github.com/aspyatkin/latest-nodejs
     revision: ee77836d31d859ddd6f93a69e7e5f08121d85356
     tag: v1.4.0
+  locale (~> 2.0.1)
   modern_nginx
     git: https://github.com/aspyatkin/modern_nginx
     revision: bf5314821bfdfc7c68a1e410a6fde0d9a81ae687
@@ -56,6 +58,7 @@ GRAPH
     git (~> 8.0.0)
   latest-nodejs (1.4.0)
     nodejs (~> 4.0.0)
+  locale (2.0.1)
   logrotate (2.2.0)
   mingw (2.0.1)
     seven_zip (>= 0.0.0)

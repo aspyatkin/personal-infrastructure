@@ -2,6 +2,8 @@ source 'https://api.berkshelf.com'
 
 solver :gecode, :preferred
 
+cookbook 'build-essential'
+cookbook 'locale', '~> 2.0.1'
 cookbook 'poise-python', '1.6.0'
 cookbook 'dhparam', '~> 1.0.0'
 
