@@ -5,8 +5,8 @@ else
   DETECTED_ENV="development"
 fi
 case "$DETECTED_ENV" in
-  "development") DETECTED_BASE="srvr.dev";;
-  "production") DETECTED_BASE="srvr.run";;
+  "development") DETECTED_BASE="e17k.local";;
+  "production") DETECTED_BASE="e17k.com";;
   *) echo "Unsupported environment $DETECTED_ENV"
     exit 2
     ;;

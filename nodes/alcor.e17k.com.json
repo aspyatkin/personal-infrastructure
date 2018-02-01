@@ -12,7 +12,7 @@
     "fqdn": "aspyatkin.com"
   },
   "automatic": {
-    "fqdn": "alcor.srvr.run"
+    "fqdn": "alcor.e17k.com"
   },
   "dhparam": {
     "default_key_size": 2048

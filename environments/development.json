@@ -1,6 +1,6 @@
 {
-  "name": "production",
-  "description": "Production environment",
+  "name": "development",
+  "description": "Development environment",
   "json_class": "Chef::Environment",
   "chef_type": "environment",
   "default_attributes": {
@@ -16,15 +16,15 @@
     },
     "nsd": {
       "master": {
-        "fqdn": "ns1.e17k.com",
-        "ip_address": "195.201.19.234",
-        "contact": "hostmaster@e17k.com"
+        "fqdn": "ns1.e17k.local",
+        "ip_address": "172.16.0.21",
+        "contact": "hostmaster@e17k.local"
       },
       "slaves": {
-        "ns2.e17k.com": "77.73.70.232"
+        "ns2.e17k.local": "172.16.0.22"
       },
       "zones": [
-        "e17k.com"
+        "e17k.local"
       ]
     },
     "ntp": {

@@ -1,0 +1,9 @@
+{
+  "id": "production",
+  "keys": {
+    "encrypted_data": "71jOY2Oi9aFmk58Q/Ey2lJKHBBp82QuyFA/TRhnsId9ElaeFwMMkarCYDej3\nxTfB+uSPeKuk1bI63fvwYcYi24pxz07iBXFbXxPZ7xb8iq13O7F/v0kIBbDW\nkD4iuFE/\n",
+    "iv": "Q8/yfmj0HseOTNMsERy/Gw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
