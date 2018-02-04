@@ -24,7 +24,9 @@
         "ns2.e17k.com": "77.73.70.232"
       },
       "zones": [
-        "e17k.com"
+        "e17k.com",
+        "themis-project.com",
+        "aspyatkin.com"
       ]
     },
     "ntp": {
