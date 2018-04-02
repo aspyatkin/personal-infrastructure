@@ -24,8 +24,8 @@ cookbook 'latest-nodejs',
 
 cookbook 'modern_nginx',
 		 git: 'https://github.com/aspyatkin/modern_nginx',
-		 tag: 'v2.9.0'
+		 tag: 'v2.10.0'
 
 cookbook 'aspyatkin-com',
 		 git: 'https://github.com/aspyatkin/aspyatkin-com-cookbook',
-		 tag: 'v1.9.0'
+		 tag: 'v1.10.0'

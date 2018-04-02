@@ -1,8 +1,8 @@
 DEPENDENCIES
   aspyatkin-com
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
-    revision: f9b9b1bc9997517054a91b04e463955459c52c84
-    tag: v1.9.0
+    revision: 8427f8156c798017c75d0a12989061b6ed51811f
+    tag: v1.10.0
   build-essential
   dhparam (~> 1.0.0)
   dotfiles
@@ -20,8 +20,8 @@ DEPENDENCIES
   locale (~> 2.0.1)
   modern_nginx
     git: https://github.com/aspyatkin/modern_nginx
-    revision: bf5314821bfdfc7c68a1e410a6fde0d9a81ae687
-    tag: v2.9.0
+    revision: a0051e13249e7a1289b21b2e14b0a41ca73d2e56
+    tag: v2.10.0
   nsd (~> 0.1.0)
   ntp (~> 3.5.4)
   poise-python (= 1.6.0)
@@ -33,17 +33,17 @@ GRAPH
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aspyatkin-com (1.9.0)
+  aspyatkin-com (1.10.0)
     git (~> 8.0.0)
     instance (~> 2.0.0)
     latest-nodejs (~> 1.4.0)
-    nginx (~> 7.0.0)
+    nginx (~> 8.1.0)
     rbenv (~> 1.7.1)
     secret (~> 1.0.0)
     ssh-private-keys (~> 2.0.0)
     ssh_known_hosts (~> 4.0.0)
     tls (~> 3.0.0)
-  build-essential (8.0.4)
+  build-essential (8.1.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
   chef-sugar (4.0.0)
@@ -52,12 +52,12 @@ GRAPH
   dotfiles (1.4.0)
     vim (~> 2.0.2)
     zsh (~> 2.0.0)
-  firewall (2.6.2)
+  firewall (2.6.3)
     chef-sugar (>= 0.0.0)
-  git (8.0.0)
+  git (8.0.1)
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
-  homebrew (4.3.0)
+  homebrew (5.0.4)
   instance (2.0.0)
   latest-git (1.4.0)
     apt (>= 0.0.0)
@@ -66,17 +66,16 @@ GRAPH
     nodejs (~> 4.0.0)
   locale (2.0.1)
   logrotate (2.2.0)
-  mingw (2.0.1)
+  mingw (2.0.2)
     seven_zip (>= 0.0.0)
-  modern_nginx (2.9.0)
+  modern_nginx (2.10.0)
     dhparam (~> 1.0.0)
     logrotate (~> 2.2.0)
-    nginx (~> 7.0.0)
+    nginx (~> 8.1.0)
   multipackage (3.0.30)
     compat_resource (>= 0.0.0)
-  nginx (7.0.2)
+  nginx (8.1.2)
     build-essential (>= 0.0.0)
-    compat_resource (>= 12.16.3)
     ohai (>= 4.1.0)
     yum-epel (>= 0.0.0)
     zypper (>= 0.0.0)
@@ -88,7 +87,7 @@ GRAPH
     instance (~> 2.0.0)
     secret (~> 1.0.0)
   ntp (3.5.6)
-  ohai (5.2.1)
+  ohai (5.2.2)
   poise (2.8.1)
   poise-archive (1.5.0)
     poise (~> 2.6)
@@ -113,10 +112,8 @@ GRAPH
   ufw (3.1.1)
     firewall (>= 2.0)
   vim (2.0.2)
-  windows (3.4.4)
-    ohai (>= 4.0.0)
-  yum-epel (2.1.2)
-    compat_resource (>= 12.16.3)
+  windows (4.1.4)
+  yum-epel (3.1.0)
   zsh (2.0.0)
     multipackage (~> 3.0)
   zypper (0.4.0)
