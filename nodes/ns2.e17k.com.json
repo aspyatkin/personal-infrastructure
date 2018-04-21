@@ -16,7 +16,7 @@
   "firewall": {
     "ufw": {
       "defaults": {
-        "ipv6": "no",
+        "ipv6": "yes",
         "manage_builtins": "no",
         "ipt_sysctl": "/etc/ufw/sysctl.conf",
         "ipt_modules": "nf_conntrack_ftp nf_nat_ftp nf_conntrack_netbios_ns",
@@ -32,15 +32,13 @@
       {
         "ns_tcp": {
           "port": 53,
-          "protocol": "tcp",
-          "source": "0.0.0.0/0"
+          "protocol": "tcp"
         }
       },
       {
         "ns_udp": {
           "port": 53,
-          "protocol": "udp",
-          "source": "0.0.0.0/0"
+          "protocol": "udp"
         }
       }
     ]

@@ -15,13 +15,18 @@
       "binary": true
     },
     "nsd": {
+      "enable_ipv6": true,
       "master": {
         "fqdn": "ns1.e17k.com",
-        "ip_address": "195.201.19.234",
+        "ipv4_address": "195.201.19.234",
+        "ipv6_address": "2A01:04F8:1C0C:4BF3:0000:0000:0000:0001",
         "contact": "hostmaster@e17k.com"
       },
       "slaves": {
-        "ns2.e17k.com": "77.73.70.232"
+        "ns2.e17k.com": {
+          "ipv4_address": "77.73.70.232",
+          "ipv6_address": "2A00:1838:0037:0217:0000:0000:0000:A389"
+        }
       },
       "zones": [
         "e17k.com",

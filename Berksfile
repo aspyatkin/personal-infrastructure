@@ -4,11 +4,11 @@ solver :gecode, :preferred
 
 cookbook 'build-essential'
 cookbook 'locale', '~> 2.0.1'
-cookbook 'poise-python', '1.6.0'
+cookbook 'poise-python', '1.7.0'
 cookbook 'ntp', '~> 3.5.4'
 cookbook 'ufw', '~> 3.1.1'
 cookbook 'dhparam', '~> 1.0.0'
-cookbook 'nsd', '~> 0.1.0'
+cookbook 'nsd', '~> 0.2.0'
 
 cookbook 'dotfiles',
 		 git: 'https://github.com/aspyatkin/dotfiles-cookbook',

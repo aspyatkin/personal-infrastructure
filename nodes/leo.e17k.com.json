@@ -5,13 +5,14 @@
     "recipe[build-essential::default]",
     "recipe[ufw::default]",
     "recipe[ntp::default]",
-    "recipe[poise-python::default]",
     "recipe[latest-git::default]",
-    "recipe[dotfiles::default]",
-    "recipe[nsd::master]"
+    "recipe[dotfiles::default]"
   ],
   "automatic": {
-    "fqdn": "ns1.e17k.com"
+    "fqdn": "leo.e17k.com"
+  },
+  "build-essential": {
+    "compile_time": true
   },
   "firewall": {
     "ufw": {
@@ -23,22 +24,17 @@
         "policy": {
           "input": "DROP",
           "output": "ACCEPT",
-          "forward": "DROP",
+          "forward": "ACCEPT",
           "application": "SKIP"
         }
       }
     },
     "rules": [
       {
-        "ns_tcp": {
-          "port": 53,
-          "protocol": "tcp"
-        }
-      },
-      {
-        "ns_udp": {
-          "port": 53,
-          "protocol": "udp"
+        "openvpn": {
+          "port": 1194,
+          "protocol": "tcp",
+          "source": "0.0.0.0/0"
         }
       }
     ]
