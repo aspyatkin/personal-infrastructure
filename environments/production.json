@@ -31,7 +31,8 @@
       "zones": [
         "e17k.com",
         "themis-project.com",
-        "aspyatkin.com"
+        "aspyatkin.com",
+        "ctf.moscow"
       ]
     },
     "ntp": {
@@ -41,9 +42,6 @@
         "2.pool.ntp.org",
         "3.pool.ntp.org"
       ]
-    },
-    "modern_nginx": {
-      "install": "mainline"
     }
   }
 }

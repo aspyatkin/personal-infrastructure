@@ -7,6 +7,7 @@
     "recipe[ntp::default]",
     "recipe[poise-python::default]",
     "recipe[latest-git::default]",
+    "recipe[latest-nodejs::default]",
     "recipe[dotfiles::default]",
     "recipe[dhparam::default_key]",
     "recipe[modern_nginx::default]",

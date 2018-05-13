@@ -1,29 +1,30 @@
 DEPENDENCIES
   aspyatkin-com
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
-    revision: 8427f8156c798017c75d0a12989061b6ed51811f
-    tag: v1.10.0
+    revision: a5b5b4041a730ede0a9505cedf494329b0c3a31a
+    tag: v1.11.0
   build-essential
   dhparam (~> 1.0.0)
   dotfiles
     git: https://github.com/aspyatkin/dotfiles-cookbook
     revision: 5a1675c593b603fd4c0e6ce6b7ddd0076c662fe9
     tag: v1.4.0
+  git (~> 9.0.0)
   latest-git
     git: https://github.com/aspyatkin/latest-git
-    revision: cc1b997196c25a34d7df6f43853099d0878a5d7f
-    tag: v1.4.0
+    revision: f4f2273e5f93ca6eabc2a6231b0ccafe0c58240e
+    tag: v1.5.0
   latest-nodejs
     git: https://github.com/aspyatkin/latest-nodejs
-    revision: ee77836d31d859ddd6f93a69e7e5f08121d85356
-    tag: v1.4.0
+    revision: b29f87aa451d21aec1ddd899dd006fe6c9dff30b
+    tag: v1.6.0
   locale (~> 2.0.1)
   modern_nginx
     git: https://github.com/aspyatkin/modern_nginx
-    revision: a0051e13249e7a1289b21b2e14b0a41ca73d2e56
-    tag: v2.10.0
+    revision: 9741234c0c9beae0842425fc85e56a1852e7d923
+    tag: v2.12.0
   nsd (~> 0.2.0)
-  ntp (~> 3.5.4)
+  ntp
   poise-python (= 1.7.0)
   ufw (~> 3.1.1)
 
@@ -33,11 +34,11 @@ GRAPH
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aspyatkin-com (1.10.0)
-    git (~> 8.0.0)
+  aspyatkin-com (1.11.0)
+    git (>= 0.0.0)
     instance (~> 2.0.0)
-    latest-nodejs (~> 1.4.0)
-    nginx (~> 8.1.0)
+    nginx (>= 0.0.0)
+    nodejs (>= 0.0.0)
     rbenv (~> 1.7.1)
     secret (~> 1.0.0)
     ssh-private-keys (~> 2.0.0)
@@ -54,24 +55,22 @@ GRAPH
     zsh (~> 2.0.0)
   firewall (2.6.3)
     chef-sugar (>= 0.0.0)
-  git (8.0.1)
-    build-essential (>= 0.0.0)
-    homebrew (>= 0.0.0)
-  homebrew (5.0.4)
+  git (9.0.0)
+    build-essential (>= 5.0.0)
   instance (2.0.0)
-  latest-git (1.4.0)
+  latest-git (1.5.0)
     apt (>= 0.0.0)
-    git (~> 8.0.0)
-  latest-nodejs (1.4.0)
-    nodejs (~> 4.0.0)
+    git (>= 0.0.0)
+  latest-nodejs (1.6.0)
+    nodejs (~> 5.0.0)
   locale (2.0.1)
   logrotate (2.2.0)
   mingw (2.0.2)
     seven_zip (>= 0.0.0)
-  modern_nginx (2.10.0)
+  modern_nginx (2.12.0)
     dhparam (~> 1.0.0)
     logrotate (~> 2.2.0)
-    nginx (~> 8.1.0)
+    nginx (>= 0.0.0)
   multipackage (3.0.30)
     compat_resource (>= 0.0.0)
   nginx (8.1.2)
@@ -79,10 +78,9 @@ GRAPH
     ohai (>= 4.1.0)
     yum-epel (>= 0.0.0)
     zypper (>= 0.0.0)
-  nodejs (4.0.0)
+  nodejs (5.0.0)
     ark (>= 2.0.2)
     build-essential (>= 0.0.0)
-    compat_resource (>= 12.16)
   nsd (0.2.0)
     instance (~> 2.0.0)
     secret (~> 1.0.0)
@@ -112,7 +110,7 @@ GRAPH
   ufw (3.1.1)
     firewall (>= 2.0)
   vim (2.0.2)
-  windows (4.2.1)
+  windows (4.2.2)
   yum-epel (3.1.0)
   zsh (2.0.0)
     multipackage (~> 3.0)
