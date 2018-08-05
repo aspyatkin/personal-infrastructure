@@ -1,8 +1,8 @@
 DEPENDENCIES
   aspyatkin-com
     git: https://github.com/aspyatkin/aspyatkin-com-cookbook
-    revision: a5b5b4041a730ede0a9505cedf494329b0c3a31a
-    tag: v1.11.0
+    revision: bf6931b64bdb4e98e33f714a2f38ac5b3bbce400
+    tag: v1.12.0
   build-essential
   dhparam (~> 1.0.0)
   dotfiles
@@ -19,10 +19,11 @@ DEPENDENCIES
     revision: b29f87aa451d21aec1ddd899dd006fe6c9dff30b
     tag: v1.6.0
   locale (~> 2.0.1)
-  modern_nginx
-    git: https://github.com/aspyatkin/modern_nginx
-    revision: 9741234c0c9beae0842425fc85e56a1852e7d923
-    tag: v2.12.0
+  nginx-amplify
+    git: https://github.com/aspyatkin/nginx-amplify-cookbook
+    revision: 1f11a3a5027bdacb09efb551ae6e68079be073da
+    tag: v1.0.0
+  ngx (~> 1.0.3)
   nsd (~> 0.2.0)
   ntp
   poise-python (= 1.7.0)
@@ -30,11 +31,10 @@ DEPENDENCIES
 
 GRAPH
   apt (7.0.0)
-  ark (3.1.0)
+  ark (4.0.0)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
-    windows (>= 0.0.0)
-  aspyatkin-com (1.11.0)
+  aspyatkin-com (1.12.0)
     git (>= 0.0.0)
     instance (~> 2.0.0)
     nginx (>= 0.0.0)
@@ -43,7 +43,7 @@ GRAPH
     secret (~> 1.0.0)
     ssh-private-keys (~> 2.0.0)
     ssh_known_hosts (~> 4.0.0)
-    tls (~> 3.0.0)
+    tls (~> 3.0.3)
   build-essential (8.1.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
@@ -53,9 +53,9 @@ GRAPH
   dotfiles (1.4.0)
     vim (~> 2.0.2)
     zsh (~> 2.0.0)
-  firewall (2.6.3)
+  firewall (2.6.5)
     chef-sugar (>= 0.0.0)
-  git (9.0.0)
+  git (9.0.1)
     build-essential (>= 5.0.0)
   instance (2.0.0)
   latest-git (1.5.0)
@@ -63,30 +63,36 @@ GRAPH
     git (>= 0.0.0)
   latest-nodejs (1.6.0)
     nodejs (~> 5.0.0)
+  libmaxminddb (1.0.0)
+    apt (>= 0.0.0)
   locale (2.0.1)
   logrotate (2.2.0)
-  mingw (2.0.2)
+  mingw (2.1.0)
     seven_zip (>= 0.0.0)
-  modern_nginx (2.12.0)
-    dhparam (~> 1.0.0)
-    logrotate (~> 2.2.0)
-    nginx (>= 0.0.0)
   multipackage (3.0.30)
     compat_resource (>= 0.0.0)
-  nginx (8.1.2)
-    build-essential (>= 0.0.0)
+  nginx (8.1.5)
+    build-essential (>= 5.0)
     ohai (>= 4.1.0)
     yum-epel (>= 0.0.0)
     zypper (>= 0.0.0)
+  nginx-amplify (1.0.0)
+    apt (>= 0.0.0)
+    secret (~> 1.0.0)
+  ngx (1.0.3)
+    dhparam (~> 1.0.0)
+    libmaxminddb (~> 1.0.0)
+    logrotate (~> 2.2.0)
+    nginx (>= 8.1.2)
   nodejs (5.0.0)
     ark (>= 2.0.2)
     build-essential (>= 0.0.0)
   nsd (0.2.0)
     instance (~> 2.0.0)
     secret (~> 1.0.0)
-  ntp (3.5.6)
-  ohai (5.2.2)
-  poise (2.8.1)
+  ntp (3.6.0)
+  ohai (5.2.3)
+  poise (2.8.2)
   poise-archive (1.5.0)
     poise (~> 2.6)
   poise-languages (2.1.2)
@@ -102,16 +108,16 @@ GRAPH
     ohai (>= 1.1)
   secret (1.0.0)
     instance (~> 2.0.0)
-  seven_zip (2.0.2)
-    windows (>= 1.2.2)
+  seven_zip (3.0.0)
+    windows (>= 0.0.0)
   ssh-private-keys (2.0.0)
   ssh_known_hosts (4.0.0)
-  tls (3.0.1)
+  tls (3.0.3)
   ufw (3.1.1)
     firewall (>= 2.0)
   vim (2.0.2)
-  windows (4.2.2)
-  yum-epel (3.1.0)
+  windows (5.0.0)
+  yum-epel (3.2.0)
   zsh (2.0.0)
     multipackage (~> 3.0)
   zypper (0.4.0)

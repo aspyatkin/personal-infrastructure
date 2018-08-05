@@ -1,0 +1,9 @@
+{
+  "id": "production",
+  "lyra.e17k.com": {
+    "encrypted_data": "3t4J3Q94a4BPbo/DcWRmffjM60UbO6JYjCPMEqLa9VGUcTq1MshrEBctIHg5\nFpKIvBZcJV4PS7S27pHIVFX1HQ==\n",
+    "iv": "Vunbx+oS2t8h3rC2tZLEZw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
