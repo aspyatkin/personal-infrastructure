@@ -12,7 +12,8 @@
     "recipe[dhparam::default_key]",
     "recipe[ngx::default]",
     "recipe[nginx-amplify::default]",
-    "recipe[aspyatkin-com::default]"
+    "recipe[aspyatkin-com::default]",
+    "recipe[redirect::default]"
   ],
   "aspyatkin-com": {
     "fqdn": "aspyatkin.com"
@@ -54,5 +55,18 @@
     "install": "mainline",
     "with_status": true,
     "with_realip": true
+  },
+  "redirect": {
+    "hosts": [
+      {
+        "fqdn": "www.aspyatkin.com",
+        "target": "aspyatkin.com",
+        "listen_ipv6": true,
+        "secure": true,
+        "permanent": true,
+        "pass_request_uri": true,
+        "ec_certificates": true
+      }
+    ]
   }
 }

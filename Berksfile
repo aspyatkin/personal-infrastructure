@@ -10,7 +10,8 @@ cookbook 'poise-python', '1.7.0'
 cookbook 'ufw', '~> 3.1.1'
 cookbook 'dhparam', '~> 1.0.0'
 cookbook 'nsd', '~> 0.2.0'
-cookbook 'ngx', '~> 1.0.3'
+cookbook 'ngx', '~> 1.1.0'
+cookbook 'redirect', '~> 1.4.0'
 
 cookbook 'dotfiles',
 		 git: 'https://github.com/aspyatkin/dotfiles-cookbook',
@@ -26,7 +27,7 @@ cookbook 'latest-nodejs',
 
 cookbook 'aspyatkin-com',
 		 git: 'https://github.com/aspyatkin/aspyatkin-com-cookbook',
-		 tag: 'v1.12.0'
+		 tag: 'v1.13.0'
 
 cookbook 'nginx-amplify',
 		 git: 'https://github.com/aspyatkin/nginx-amplify-cookbook',
