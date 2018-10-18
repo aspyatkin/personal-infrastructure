@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    bcrypt_pbkdf (1.0.0)
     berkshelf (6.3.2)
       buff-config (~> 2.0)
       buff-extensions (~> 2.0)
@@ -143,6 +144,10 @@ GEM
     proxifier (1.0.3)
     public_suffix (3.0.2)
     rack (2.0.5)
+    rbnacl (4.0.2)
+      ffi
+    rbnacl-libsodium (1.0.16)
+      rbnacl (>= 3.0.1)
     retryable (2.0.4)
     ridley (5.1.1)
       addressable
@@ -215,12 +220,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt_pbkdf (>= 1.0, < 2.0)
   berkshelf (~> 6.3.2)
   chef (~> 12.22.3)
   dep_selector (~> 1.0, >= 1.0.6)
   dotenv (~> 2.3.0)
   knife-solo (~> 0.7.0.pre3)
   knife-solo_data_bag (~> 2.1.0)
+  rbnacl (>= 3.2, < 5.0)
+  rbnacl-libsodium
 
 BUNDLED WITH
-   1.16.1
+   1.16.5

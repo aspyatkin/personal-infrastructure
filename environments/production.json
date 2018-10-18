@@ -7,13 +7,6 @@
     "build-essential": {
       "compile_time": true
     },
-    "dhparam": {
-      "default_key_size": 2048
-    },
-    "latest-nodejs": {
-      "install": "current",
-      "binary": true
-    },
     "nsd": {
       "enable_ipv6": true,
       "master": {

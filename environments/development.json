@@ -7,13 +7,6 @@
     "build-essential": {
       "compile_time": true
     },
-    "dhparam": {
-      "default_key_size": 2048
-    },
-    "latest-nodejs": {
-      "install": "current",
-      "binary": true
-    },
     "nsd": {
       "master": {
         "fqdn": "ns1.e17k.local",
@@ -34,9 +27,6 @@
         "2.pool.ntp.org",
         "3.pool.ntp.org"
       ]
-    },
-    "modern_nginx": {
-      "install": "mainline"
     }
   }
 }
